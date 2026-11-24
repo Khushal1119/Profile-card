@@ -20,12 +20,14 @@ body {
     background: #1e293b;
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .dark-pic, .light-pic {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
     border: 3px solid blue;
 }
 
@@ -57,28 +59,28 @@ body {
     border-radius: 50%;
 }
 
-.light-mode {
+body.light-mode {
     background: #f1f5f9;
     color: black;
 }
 
-.light-mode .card {
+body.light-mode .card {
     background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.light-mode .dark-pic {
+body.light-mode .dark-pic {
     display: none;
 }
 
-.light-mode .light-pic {
+body.light-mode .light-pic {
     display: inline-block;
 }
 
-.light-mode .links a {
+body.light-mode .links a {
     background: #e2e8f0;
 }
 
-.light-mode .icon {
+body.light-mode .links .icon {
     filter: invert(1);
 }
-
